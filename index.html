@@ -8,10 +8,154 @@
     <meta name="description" content="Milena Araujo Estética e Bem Estar, oferecendo serviços de estética avançada, estética corporal, estética facial, terapia capilar e terapia integrativa.">
     <meta name="keywords" content="estética, estética avançada, estética corporal, estética facial, terapia capilar, terapia integrativa, beleza, bem-estar, limpeza de pele, criolipólise, ozonioterapia, drenagem linfática">
     <style>
-        /* Estilos CSS aqui */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #map {
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+        }
+        .btn-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn-container button {
+            margin-right: 20px;
+        }
+        .image-text-container {
+            display: flex;
+            align-items: center;
+        }
+        .image-text-container img {
+            width: 50%;
+            float: right;
+            margin-left: 20px;
+        }
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
-    <!-- Conteúdo do site aqui -->
+     <header>
+        <h1>Bem-vindo à Milena Araujo Estética</h1>
+        <nav>
+            <ul>
+                <li><a href="#servicos">Nossos Serviços</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+            <ul>
+                <li>Estética Avançada</li>
+                <li>Estética Corporal</li>
+                <li>Estética Facial</li>
+                <li>Terapia Capilar</li>
+                <li>Terapia Integrativa</li>
+            </ul>
+        </section>
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>A Milena Araujo Estética é especializada em oferecer tratamentos de alta qualidade para promover o bem-estar e a beleza dos nossos clientes. Nossos profissionais altamente qualificados estão comprometidos em proporcionar uma experiência única e personalizada a cada cliente.</p>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para agendar uma consulta ou saber mais sobre nossos serviços.</p>
+            <form action="mailto:contato@milenaaraujoestetica.com.br" method="post" enctype="text/plain">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="map">
+            <h2>Localização</h2>
+            <iframe src="https://www.google.com/maps/place/Milena+Araujo+%7C+Est%C3%A9tica+e+Bem+Estar/@-23.5413326,-46.5651001,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce5f7891e93ed3:0x9c74121db2c69215!8m2!3d-23.5413326!4d-46.5651001!16s%2Fg%2F11q2vrxjhs?entry=ttu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        <section class="image-text-container">
+            <img src="caminho_para_a_imagem.jpg" alt="Imagem Ilustrativa">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod euismod magna, id dictum nisl pharetra ac. Nullam sodales suscipit quam vitae consequat. Phasellus euismod lacus ac justo lobortis, nec tincidunt libero tempus.</p>
+        </section>
+        <div class="social-icons">
+            <a href="link_da_pagina_do_facebook" target="_blank"><img src="facebook_icon.png" alt="Facebook"></a>
+            <a href="link_do_perfil_do_instagram" target="_blank"><img src="instagram_icon.png" alt="Instagram"></a>
+            <a href="link_do_perfil_do_twitter" target="_blank"><img src="twitter_icon.png" alt="Twitter"></a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Milena Araujo Estética e Bem Estar. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
