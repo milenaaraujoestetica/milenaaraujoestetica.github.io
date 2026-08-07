@@ -25,25 +25,82 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "HealthAndBeautyBusiness",
-  "name": "Milena Araujo Estética e Bem Estar",
-  "url": "https://milenaaraujoestetica.com.br",
-  "telephone": "+5511933110806",
-  "email": "contato@milenaaraujoestetica.com.br",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "São Paulo",
-    "addressRegion": "SP",
-    "addressCountry": "BR"
-  },
-  "openingHours": ["Mo-Tu 09:00-19:00", "Su 10:00-15:00"],
-  "sameAs": [
-    "https://www.instagram.com/milenaaraujo.estetica/",
-    "https://www.facebook.com/milenaaraujo.estetica"
-  ],
-  "description": "Esteticista e pós-graduada em disfunções estéticas dermatológicas, com mais de 5 anos de experiência em tratamentos faciais, corporais e capilares.",
-  "priceRange": "$$",
-  "image": "https://milenaaraujoestetica.com.br/og-image.jpg"
+  "@graph": [
+    {
+      "@type": "HealthAndBeautyBusiness",
+      "name": "Milena Araujo Estética e Bem Estar",
+      "image": "https://milenaaraujoestetica.com.br/bec096e8be563ffc48c4ca079455906465254850638cc272828447fae29c638b/993202608075786.jpg",
+      "@id": "https://milenaaraujoestetica.com.br/",
+      "url": "https://milenaaraujoestetica.com.br/",
+      "telephone": "+5511933110806",
+      "email": "milena@milenaaraujoestetica.com.br",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Euclides Pacheco, 993",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "postalCode": "03321000",
+        "addressCountry": "BR" 
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-23.547284600230956", 
+        "longitude": "-46.565243543274214"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+          "opens": "09:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "10:00",
+          "closes": "16:00"
+        }
+      ],
+      "sameAs": [
+          "https://www.instagram.com/milenaaraujo.estetica/",
+          "https://www.facebook.com/milenaaraujo.estetica"
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Milena Araujo",
+        "jobTitle": "Esteticista e Terapeuta Integrativa"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quais são as qualificações da esteticista Milena Araujo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Milena Araujo é formada em Estética e Cosmética, pós-graduada em Disfunções Estéticas Dermatológicas, certificada em Ozonioterapia, Terapias Integrativas e possui iniciação científica em Tricologia (Terapia Capilar)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Onde fica a clínica Milena Araujo Estética?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A clínica Milena Araujo Estética está localizada no bairro do Tatuapé, em São Paulo (SP). Os agendamentos podem ser feitos pelo WhatsApp (11) 93311-0806 ou pelo site."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quais tratamentos corporais são oferecidos pela Milena Araujo Estética?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A clínica oferece tratamentos para gordura localizada, diástase, celulite, flacidez tissular e estrias, utilizando equipamentos modernos e protocolos avançados."
+          }
+        }
+      ]
+    }
+  ]
 }
 </script>
 <title>Milena Araujo Estética e Bem Estar — Tratamentos Faciais, Corporais e Capilares em SP</title>
